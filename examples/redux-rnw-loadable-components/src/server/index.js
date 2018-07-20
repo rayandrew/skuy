@@ -6,6 +6,7 @@ import logger from 'morgan';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { Provider } from 'react-redux';
+import Helmet from 'react-helmet';
 
 import qs from 'qs';
 import { render } from 'skuy/server';
@@ -37,6 +38,7 @@ server
       const store = configureStore(preloadedState);
 
       const customRenderer = async (node) => {
+        const helmet = Helmet.renderStatic();
         const CustomApp = <Provider store={store}>{node}</Provider>;
 
         const loadableState = await getLoadableState(CustomApp);
@@ -44,6 +46,7 @@ server
 
         return {
           html: renderToString(CustomApp),
+          helmet,
           loadable,
           store,
         };

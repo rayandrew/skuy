@@ -6,6 +6,7 @@ import logger from 'morgan';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { Provider } from 'react-redux';
+import Helmet from 'react-helmet';
 
 import qs from 'qs';
 import { render } from 'skuy/server';
@@ -53,6 +54,7 @@ server
       const modules = [];
 
       const customRenderer = (node) => {
+        const helmet = Helmet.renderStatic();
         const CustomApp = (
           <Capture report={(moduleName) => modules.push(moduleName)}>
             <Provider store={store}>{node}</Provider>
@@ -63,6 +65,7 @@ server
         const chunks = bundles.filter((bundle) => bundle.file.endsWith('.js'));
 
         return {
+          helmet,
           chunks,
           store,
           html: renderToString(CustomApp),
