@@ -19,20 +19,14 @@ export default class CustomDocument extends Component {
   }
 
   render() {
-    const { rootId, dataId, helmet, assets, data, rnwCss } = this.props;
-
-    const htmlAttrs = helmet.htmlAttributes.toComponent();
-    const bodyAttrs = helmet.bodyAttributes.toComponent();
+    const { rootId, dataId, assets, data, rnwCss } = this.props;
 
     return (
-      <html lang="en" {...htmlAttrs}>
+      <html lang="en">
         <head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          {helmet.title.toComponent()}
-          {helmet.meta.toComponent()}
-          {helmet.link.toComponent()}
           {assets.client.css && (
             <link rel="stylesheet" href={assets.client.css} />
           )}
@@ -45,7 +39,7 @@ export default class CustomDocument extends Component {
             }}
           />
         </head>
-        <body {...bodyAttrs}>
+        <body>
           <SkuyRoot id={rootId} />
           <SkuyData id={dataId} data={data} />
           <script
