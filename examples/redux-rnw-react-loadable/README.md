@@ -1,43 +1,21 @@
-<h1 align="center">
-  <br>
-  React SSR using Razzle + RNW with Redux and Code Splitting
-  <br>
-  <br>
-</h1>
+# React Native Web, Redux, and React Loadable Example
 
-<p align="center">
-  <a href="https://github.com/Flet/semistandard"><img src="https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square" alt="JS Semistandard Style"></a>
-</p>
+## How to use
 
-<p align="center">
-  This repository contains the example of React SSR using Razzle
-</p>
+Download the example [or clone the whole project](https://github.com/rayandrews/skuy.git):
 
----
+```bash
+curl https://codeload.github.com/rayandrews/skuy/tar.gz/master | tar -xz --strip=2 skuy-master/examples/redux-rnw-react-loadable
+cd redux-rnw-react-loadable
+```
 
-## Installation and Running
-1. yarn
-2. yarn start
+Install it and run:
 
----
+```bash
+npm install
+npm run dev
+```
 
-## Keynote
+## Idea behind the example
 
-### Library and Tools
-
-- React Native Web
-- React Loadable
-- Redux
-- Razzle!
-
-### Idea behind the example
-
-This is a basic, bare-bones example of how to use React and Razzle with React Native Web, React Loadable, and Redux.
-
-The project itself is derived from [create-razzle-app --example with-react-native0web](https://github.com/jaredpalmer/razzle/tree/next/examples/with-react-native-web)
-combined with [create-razzle-app --example with-redux](https://github.com/jaredpalmer/razzle/tree/next/examples/with-redux),[create-razzle-app --example with-react-native-web](https://github.com/jaredpalmer/razzle/tree/next/examples/with-react-loadable),
-and also special thanks to Natan Elia for his boilerplate [razzle with after js + redux + rnw](https://github.com/natanelia/razzle-afterjs-redux-rnw-example)
-
----
-
-## Contributors
+This example is to show how __Skuy__ works with other libraries such as Redux for storing data and React Loadable for code splitting
