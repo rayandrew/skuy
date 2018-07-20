@@ -25,7 +25,7 @@ export default class Document extends React.Component {
             <link rel="stylesheet" href={assets.client.css} />
           )}
         </head>
-        <body {...bodyAttrs}>
+        <body>
           <SkuyRoot id={rootId} />
           <SkuyData id={dataId} data={data} />
           <script

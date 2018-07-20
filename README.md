@@ -84,6 +84,7 @@ But.. something is bothering me..
 - [Custom/Async Rendering](#customasync-rendering)
 - [Custom/Async Rendering](#customasync-rendering)
 - [Authors](#authors)
+- [Special Thanks](#special-thanks)
 - [Inspirations](#inspirations)
 - [License](#license)
 
