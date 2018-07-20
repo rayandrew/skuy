@@ -25,11 +25,10 @@
     "react-native-animatable"
   ],
   "scripts": {
-    "build": "yarn clean && yarn build:umd",
-    "build:umd": "BABEL_ENV=commonjs babel src -d dist --ignore \"**/__tests__\"",
-    "build:commonjs": "BABEL_ENV=commonjs babel src -d dist/cjs --ignore \"**/__tests__\"",
+    "build": "yarn clean && yarn build:cjs && yarn build:umd",
+    "build:cjs": "BABEL_ENV=commonjs webpack --config webpack.config.cjs.js",
+    "build:umd": "webpack --config webpack.config.umd.js",
     "build:watch": "yarn build -w",
-    "build:rollup": "yarn clean && rollup -c",
     "clean": "rimraf dist"
   },
   "devDependencies": {
@@ -48,7 +47,6 @@
     "babel-preset-stage-0": "^6.24.1",
     "hoist-non-react-statics": "^2.5.5",
     "prop-types": "^15.6.2",
-    "react-helmet": "^5.2.0",
     "react-tree-walker": "^4.1.0",
     "rimraf": "^2.6.2",
     "rollup": "^0.62.0",
@@ -64,7 +62,6 @@
   },
   "peerDependencies": {
     "react": "16.x.x",
-    "react-art": "16.x.x",
     "react-dom": "16.x.x",
     "react-router-dom": "^4.x.x"
   }

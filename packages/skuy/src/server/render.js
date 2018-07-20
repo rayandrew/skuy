@@ -9,7 +9,6 @@
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import StaticRouter from 'react-router-dom/StaticRouter';
-import Helmet from 'react-helmet';
 
 import { isPromise, initRedirect } from '../core/utils';
 
@@ -68,10 +67,7 @@ export default async function render(App, routerContext, _options) {
       ? await asyncOrSyncRender
       : asyncOrSyncRender;
 
-    const helmet = Helmet.renderStatic();
-
     return {
-      helmet,
       ...renderedContent,
     };
   };

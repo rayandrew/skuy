@@ -4,7 +4,7 @@ module.exports = {
   ...defaultConfig,
   output: {
     path: `${__dirname}/dist`,
-    filename: 'index.js',
+    filename: '[name].js',
     library: libraryName,
     libraryTarget: 'umd',
     umdNamedDefine: true,

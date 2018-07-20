@@ -1,17 +1,25 @@
 const path = require('path');
-const glob = require('glob');
 
 module.exports = {
   libraryName: 'skuy',
   defaultConfig: {
     context: __dirname,
     mode: 'production',
-    entry: glob.sync('./src/**/*.js'),
+    entry: {
+      index: path.resolve('./src/index.js'),
+      client: path.resolve('./src/client/index.js'),
+      core: path.resolve('./src/core/index.js'),
+      document: path.resolve('./src/document/index.js'),
+      server: path.resolve('./src/server/index.js'),
+    },
     module: {
       rules: [
         {
           test: /\.(js|jsx)$/,
-          include: path.resolve('./src'),
+          include: [
+            path.resolve('./src'),
+            path.resolve('./node_modules/react-tree-walker'),
+          ],
           exclude: /node_modules\//,
           use: {
             loader: 'babel-loader',

@@ -55,7 +55,9 @@
       "**/razzle",
       "**/razzle/**",
       "**/loadable-components",
-      "**/loadable-components/**"
+      "**/loadable-components/**",
+      "**/react-tree-walker",
+      "**/react-tree-walker/**"
     ]
   },
   "lint-staged": {

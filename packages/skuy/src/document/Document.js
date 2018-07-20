@@ -13,19 +13,14 @@ export default class Document extends React.Component {
   }
 
   render() {
-    const { rootId, dataId, helmet, assets, data } = this.props;
-    const htmlAttrs = helmet.htmlAttributes.toComponent();
-    const bodyAttrs = helmet.bodyAttributes.toComponent();
+    const { rootId, dataId, assets, data } = this.props;
 
     return (
-      <html {...htmlAttrs}>
+      <html>
         <head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          {helmet.title.toComponent()}
-          {helmet.meta.toComponent()}
-          {helmet.link.toComponent()}
           {assets.client.css && (
             <link rel="stylesheet" href={assets.client.css} />
           )}
