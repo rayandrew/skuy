@@ -1,6 +1,6 @@
 {
   "name": "skuy",
-  "version": "0.1.2-0",
+  "version": "0.1.3-0",
   "description": "React SSR Power Pack",
   "main": "dist/index.js",
   "module": "dist/index.js",
