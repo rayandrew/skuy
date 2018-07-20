@@ -1,7 +1,7 @@
 {
   "name": "basic",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "start": "razzle start",
@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "express": "^4.16.2",
-    "skuy": "^0.0.1",
     "raf": "^3.4.0",
     "razzle": "^2.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "skuy": "^0.1.0"
   }
 }

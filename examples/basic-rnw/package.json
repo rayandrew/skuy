@@ -1,6 +1,6 @@
 {
   "name": "basic-rnw",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -11,11 +11,11 @@
   },
   "dependencies": {
     "express": "^4.16.3",
-    "skuy": "^0.0.1",
     "razzle": "^2.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-native-web": "^0.8.8",
     "react-router-dom": "^4.3.1",
-    "react-native-web": "^0.8.8"
+    "skuy": "^0.1.0"
   }
 }

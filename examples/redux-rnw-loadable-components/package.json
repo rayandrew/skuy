@@ -1,6 +1,6 @@
 {
   "name": "redux-rnw-loadable-components",
-  "version": "2.0.4",
+  "version": "0.1.0",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -21,8 +21,8 @@
     "express": "^4.15.2",
     "loadable-components": "^2.2.2",
     "lodash": "^4.17.10",
-    "modal-react-native-web": "^0.1.6",
     "modal-enhanced-react-native-web": "^0.1.6-1",
+    "modal-react-native-web": "^0.1.6",
     "morgan": "^1.9.0",
     "prop-types": "^15.6.1",
     "qs": "^6.5.2",
