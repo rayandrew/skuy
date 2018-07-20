@@ -1,0 +1,73 @@
+{
+  "name": "skuy",
+  "version": "0.0.1",
+  "description": "React SSR Power Pack",
+  "repository": "https://github.com/rayandrews/skuy",
+  "homepage": "https://github.com/rayandrews/skuy#readme",
+  "bugs": "https://github.com/rayandrews/skuy/issues",
+  "author": "Ray Andrew <raydreww@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean:allnode": "yarn clean:all && rimraf node_modules",
+    "clean:all": "lerna clean",
+    "build:skuy": "lerna run --stream --scope=skuy build",
+    "build:skuy-rollup": "lerna run --stream --scope=skuy build:rollup",
+    "lint": "prettier-eslint --write \"packages/**/*.js\"",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "razzle": "2.x.x",
+    "react": "^16.4.1",
+    "react-art": "^16.4.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "concurrently": "^3.5.1",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.1",
+    "eslint-plugin-react": "^7.10.0",
+    "husky": "^0.14.3",
+    "jest": "^23.3.0",
+    "lerna": "^2.11.0",
+    "lint-staged": "^7.2.0",
+    "onchange": "^4.0.0",
+    "prettier": "^1.13.7",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1",
+    "rimraf": "^2.6.2"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "examples/*"
+    ],
+    "nohoist": [
+      "**/razzle",
+      "**/razzle/**",
+      "**/loadable-components",
+      "**/loadable-components/**"
+    ]
+  },
+  "lint-staged": {
+    "linters": {
+      "**/*.js": [
+        "prettier-eslint --write",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "**/dist/*.js",
+      "**/node_modules/**"
+    ]
+  }
+}
