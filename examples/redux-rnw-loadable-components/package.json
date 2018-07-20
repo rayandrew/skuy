@@ -1,6 +1,6 @@
 {
   "name": "redux-rnw-loadable-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -40,8 +40,8 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "reselect": "^3.0.1",
-    "skuy": "^0.1.0",
-    "serialize-javascript": "^1.5.0"
+    "serialize-javascript": "^1.5.0",
+    "skuy": "^0.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.2",
