@@ -18,6 +18,24 @@
   <br />
 </h2>
 
+## Getting started with Skuy
+
+__Skuy__ has same API as After.js.
+
+If you have familiarize yourself with After, then you are not finding it difficult to migrate to __Skuy__.
+
+__Also :__ You can build it on your SSR boilerplate (either it webpack, parcel, etc).
+
+__Skuy__ is just another component wrapper to ease React SSR.
+
+### Quickstart with Razzle
+
+```bash
+curl https://codeload.github.com/rayandrews/skuy/tar.gz/master | tar -xz --strip=2 skuy-master/examples/basic
+cd basic
+```
+
+---
 
 ## Background
 
@@ -56,8 +74,6 @@ But.. something is bothering me..
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [How Skuy Works](#how-skuy-works)
-- [Getting started with Skuy](#getting-started-with-skuy)
-  - [Quickstart with Razzle](#quickstart-with-razzle)
 - [Data Fetching](#data-fetching)
   - [`getInitialProps | { name } : (ctx) => object`](#getinitialprops---name---ctx--object)
   - [Injected Context Data](#injected-context-data)
@@ -80,23 +96,6 @@ But.. something is bothering me..
 __Skuy__ will walk through your React Tree to find static method that you've already specified.
 
 If __Skuy__ not found any static method, __Skuy__ will gracefully return your rendered component.
-
-## Getting started with Skuy
-
-__Skuy__ has same API as After.js.
-
-If you have familiarize yourself with After, then you are not finding it difficult to migrate to __Skuy__.
-
-__Also :__ You can build it on your SSR boilerplate (either it webpack, parcel, etc).
-
-__Skuy__ is just another component wrapper to ease React SSR.
-
-### Quickstart with Razzle
-
-```bash
-curl https://codeload.github.com/rayandrews/skuy/tar.gz/master | tar -xz --strip=2 skuy-master/examples/basic
-cd basic
-```
 
 ## Data Fetching
 
@@ -685,6 +684,13 @@ export default server;
 
 * Ray Andrew [@rayandrews](https://github.com/rayandrews)
 * Natan Elia [@natanelia](https://github.com/natanelia)
+
+---
+
+## Special Thanks
+
+* Ivana Irene [@ivanaairenee](https://github.com/ivanaairenee)
+* Reinaldo Ignatius [@nimitz21](https://github.com/nimitz21)
 
 ---
 
