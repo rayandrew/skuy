@@ -13,7 +13,7 @@ Install it and run:
 
 ```bash
 npm install
-npm run dev
+npm run start
 ```
 
 ## Idea behind the example
