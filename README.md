@@ -2,6 +2,7 @@
   Skuy
   <br />
   <br />
+  <a align="center" href="https://nodei.co/npm/skuy/"><img align="center" src="https://nodei.co/npm/skuy.png?downloads=true&downloadRank=true&stars=true" /></a>
 </h1>
 
 <h2 align="center">
@@ -16,6 +17,7 @@
   <br />
   <br />
 </h2>
+
 
 ## Background
 
